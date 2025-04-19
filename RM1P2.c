@@ -62,6 +62,10 @@ void makan(pqueue *makanan)
 
 void printqueue(pqueue *makanan)
 {
+  if(makanan->size == 0){
+    printf("0");
+    return;
+  }
   for (int i = 0; i < makanan->size; i++)
   {
     printf("%lld ", makanan->berat[i]);
